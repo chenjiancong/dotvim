@@ -11,4 +11,5 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 
 ## 安装
 git clone git://github.com/chenjiancong/dotvim.git ~/.vim
+
 ln -s ~/.vim/vimrc ~/.vimrc
