@@ -52,6 +52,8 @@ set smartcase
 
 " 折叠代码 使用 marker 方式 {{{ 折叠内容 }}}
 set foldmethod=marker
+au BufWinLeave .* mkview
+au BufWinEnter .* silent loadview 
 
 " history存储容量
 set history=2000
@@ -65,11 +67,11 @@ set backspace=indent,eol,start
 " Explicitly tell vim that the terminal has 256 colors "
 set t_Co=256
 " 鼠标暂不启用
-set mouse=a
-set report=0
+"set mouse=a
+"set report=0
 
 " 取消换行 don't wrap lines
-set nowrap
+"set nowrap
 " 在上下移动光标时，光标的上方或下方至少会保留显示的行数
 set scrolloff=7
 
